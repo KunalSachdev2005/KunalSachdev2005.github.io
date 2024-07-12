@@ -1,0 +1,161 @@
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+	transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+body {
+    margin: 10px;
+    padding: 10px;
+}
+header {
+    background-color: rgb(255, 255, 255);
+    background-image: url("../images/flywheel.jpg");
+    width: 1455px;
+    height: 124px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 10%;
+    padding: 5px 20px 50px;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 23px;
+    margin: 30px;
+}
+
+nav a {
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 65px;
+    padding: 20px 80px;
+	transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+a {
+    text-align: center;
+}
+.active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(6, 24, 235);
+}
+.left {
+    background-color: rgba(89, 87, 3, 0.81);
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+.left, .right {
+    display: inline-block;
+}
+.right {
+    width: 70%;
+    font-size: 20px;
+}
+
+img {
+    display: block;
+    height: 100px;
+    width: 175px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-image: initial;
+    margin: 50px 40px;
+}
+
+/* New css code for styling the table*/
+
+/*
+table
+Style at a minimum:
+Font - multiple families, size, weight, and line-height
+Width - don't take up the entire space
+Margin - center the table
+
+table heading
+Change background color - Try to use a gradient
+Add a border - Round only the top two corners. Make the bottom border thicker
+Add at least one other property.
+
+table rows
+Select the opacity to a value of about .8
+Left align the first column, center the other two
+Select the opacity to a value of 1 when the element hovered upon
+
+td
+Change the padding, font color, background color, and set the border radius to 2px
+Optional - use a text shadow
+*/
+
+table {
+	font-family:  'Garamond', "Lucida Console";
+	font-size: 16px;
+	line-height: 1.8;
+	width: 80%;
+	margin: 0 auto;
+	font-weight: bold;
+}
+
+tr {
+	opacity: 0.8;
+}
+
+tr:hover {
+	opacity: 1.0;
+}
+
+th {
+	background: linear-gradient(to bottom, #9ACD32, #6B8E23); /* Olive green gradient */
+    background: -webkit-linear-gradient(top, #9ACD32, #6B8E23); /* For Safari */
+    background: -o-linear-gradient(top, #9ACD32, #6B8E23); /* For Opera */
+    background: -moz-linear-gradient(top, #9ACD32, #6B8E23); /* For Firefox */
+	color: #fff;
+	padding: 5px;
+	border: 0.7px solid white;
+	border-radius: 5px 5px 0 0;
+	border-bottom: 3px solid #90EE90;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	opacity: 1.0;
+}
+
+td {
+	padding: 10px;
+	color: #333;
+    background-color: #f0f8c6;
+	border: 1.0px solid white;
+	border-radius: 2px;
+	text-shadow: 1px 1px 1px rgba(0, 225, 0, 0.5);
+}
+
+td:first-child {
+	text-align: left;
+}
+
+td:nth-child(2), td:nth-child(3){
+	text-align: center;
+}
+
+th:first-child{
+	text-align: left;
+}
